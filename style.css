@@ -46,3 +46,18 @@ video
     
 }
 
+.modal_dialog
+{
+    width: 90%;
+
+}
+
+.instruction_image
+{
+   display: inline-block;
+   width:45%;
+
+}
+
+
+
