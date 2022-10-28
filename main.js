@@ -8,6 +8,7 @@ function preload()
     mario_die=loadSound("mariodie.wav");
 	setSprites();
 	MarioAnimation();
+
 }
 
 function setup() 
@@ -21,6 +22,8 @@ function setup()
 
 	poseNet=ml5.poseNet(video,modelLoaded);
 	poseNet.on('pose',gotPoses);
+	video.parent('game_console');
+	
 
 }
 
@@ -45,10 +48,7 @@ function gotPoses(results)
 		
 
 	}
-}
-
-
-
+}   
 
 
 
